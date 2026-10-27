@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Temukan destinasi, cerita perjalanan, dan inspirasi wisata terbaik dari seluruh Indonesia bersama ExploreNusantara."
+    />
+    <meta name="theme-color" content="#f8faf8" />
+    <title>ExploreNusantara — Explore the Beauty of Indonesia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="ExploreNusantara, beranda">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 3.5 36.5 33H3.5L20 3.5Z" fill="currentColor"/><path d="m20 15-10 18h20L20 15Z" fill="#C5E7D7"/><path d="M5 26.5c4.2-3.1 8.6-3.1 13 0s8.8 3.1 13 0 5-2.7 5-2.7" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+          </span>
+          <span>Explore<span class="brand-accent">Nusantara</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Navigasi utama">
+          <a href="#top">Beranda</a>
+          <a href="#destinations">Destinasi</a>
+          <a href="#categories">Kategori</a>
+          <a href="#gallery">Galeri</a>
+          <a href="#articles">Artikel</a>
+          <a href="#about">Tentang Kami</a>
+          <button class="nav-favorites" type="button" data-open-favorites>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+            Favorit <span class="favorite-count" aria-label="0 destinasi favorit">0</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="Pemandangan laut tropis di Raja Ampat"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow hero-eyebrow"><span></span> Satu negeri, sejuta cerita</p>
+          <h1 id="hero-title">Temukan Keindahan<br />Indonesia<span>.</span></h1>
+          <p class="hero-copy">Dari birunya laut hingga hangatnya budaya, temukan perjalanan yang akan selalu kamu kenang.</p>
+          <a class="button button-light" href="#destinations">Jelajahi Destinasi <span aria-hidden="true">↗</span></a>
+          <form class="hero-search" id="hero-search">
+            <label class="sr-only" for="hero-search-input">Cari destinasi atau lokasi</label>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.2 4.2"/></svg>
+            <input id="hero-search-input" type="search" placeholder="Cari destinasi impianmu..." autocomplete="off" />
+            <button type="submit">Cari</button>
+          </form>
+          <div class="hero-note"><span class="avatar-stack" aria-hidden="true"><i></i><i></i><i></i></span><span><strong>Temukan tempat favoritmu</strong><br />Mulai petualangan dari sini</span></div>
+        </div>
+        <div class="hero-caption"><span>01 / 06</span><span class="caption-line"></span><span>Raja Ampat, Papua Barat</span></div>
+        <a class="scroll-cue" href="#categories" aria-label="Gulir ke kategori wisata"><span></span></a>
+      </section>
+
+      <section class="section categories-section" id="categories">
+        <div class="container">
+          <div class="section-heading heading-inline">
+            <div><p class="eyebrow">Jelajahi caramu</p><h2>Temukan sesuai <span>minatmu</span></h2></div>
+            <p class="section-note">Setiap perjalanan punya cerita. Pilih suasana yang paling kamu rindukan.</p>
+          </div>
+          <div class="category-list" id="category-list" aria-label="Filter kategori wisata"></div>
+        </div>
+      </section>
+
+      <section class="section featured-section" id="featured">
+        <div class="container">
+          <div class="section-heading heading-inline">
+            <div><p class="eyebrow">Pilihan editor</p><h2>Pesona yang <span>tak terlupakan</span></h2></div>
+            <a class="text-link" href="#destinations">Lihat semua destinasi <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="bento-grid" id="bento-grid"></div>
+        </div>
+      </section>
+
+      <section class="section destinations-section" id="destinations">
+        <div class="container">
+          <div class="section-heading heading-inline">
+            <div><p class="eyebrow">Inspirasi perjalanan</p><h2>Destinasi <span>populer</span></h2></div>
+            <p class="section-note">Sudut-sudut Indonesia yang selalu punya alasan untuk dikunjungi.</p>
+          </div>
+          <div class="filter-panel">
+            <label class="filter-search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.2 4.2"/></svg>
+              <span class="sr-only">Cari nama destinasi</span>
+              <input id="destination-search" type="search" placeholder="Cari destinasi..." />
+            </label>
+            <label class="select-filter"><span class="sr-only">Filter kategori</span><select id="category-filter"><option value="">Semua kategori</option></select></label>
+            <label class="select-filter"><span class="sr-only">Filter daerah</span><select id="region-filter"><option value="">Semua daerah</option></select></label>
+            <button class="reset-button" id="reset-filters" type="button">Reset filter</button>
+          </div>
+          <p class="results-summary" id="results-summary" aria-live="polite"></p>
+          <div class="destination-grid" id="destination-grid"></div>
+          <div class="empty-state" id="empty-state" hidden>
+            <span aria-hidden="true">⌕</span><h3>Belum menemukan destinasi</h3><p>Coba kata kunci atau filter yang berbeda.</p>
+            <button class="button button-dark" type="button" data-reset-filters>Reset pencarian</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="container">
+          <div class="section-heading heading-inline">
+            <div><p class="eyebrow">Cerita dalam bingkai</p><h2>Indonesia, dari <span>dekat</span></h2></div>
+            <p class="section-note">Potongan keindahan yang membuat kita ingin terus pulang dan menjelajah.</p>
+          </div>
+          <div class="masonry-grid" id="gallery-grid"></div>
+        </div>
+      </section>
+
+      <section class="section articles-section" id="articles">
+        <div class="container">
+          <div class="section-heading heading-inline">
+            <div><p class="eyebrow">Jurnal perjalanan</p><h2>Cerita untuk <span>dibawa pulang</span></h2></div>
+            <a class="text-link" href="#articles">Baca cerita lainnya <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="article-grid" id="article-grid"></div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="container about-grid">
+          <div class="about-image" role="img" aria-label="Wisatawan menikmati pemandangan alam Indonesia"></div>
+          <div class="about-copy">
+            <p class="eyebrow">Tentang ExploreNusantara</p>
+            <h2>Lebih dekat dengan<br /><span>keindahan negeri sendiri.</span></h2>
+            <p>ExploreNusantara adalah teman perjalananmu untuk mengenal pesona Indonesia. Kami merangkum inspirasi destinasi, cerita lokal, dan panduan awal agar kamu bisa merencanakan petualangan dengan lebih mudah.</p>
+            <p>Informasi dapat berubah. Selalu cek kembali detail terbaru kepada pengelola destinasi sebelum berkunjung.</p>
+            <a class="button button-dark" href="#destinations">Mulai menjelajah <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="about-stat"><strong>17.000<span>+</span></strong><span>pulau yang membentuk<br />negeri penuh cerita</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 3.5 36.5 33H3.5L20 3.5Z" fill="currentColor"/><path d="m20 15-10 18h20L20 15Z" fill="#C5E7D7"/><path d="M5 26.5c4.2-3.1 8.6-3.1 13 0s8.8 3.1 13 0 5-2.7 5-2.7" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg></span><span>Explore<span class="brand-accent">Nusantara</span></span></a><p>Explore the Beauty of Indonesia</p></div>
+        <div class="footer-links"><a href="#destinations">Destinasi</a><a href="#gallery">Galeri</a><a href="#articles">Artikel</a><a href="#about">Tentang kami</a></div>
+        <a class="back-top" href="#top">Kembali ke atas ↑</a>
+      </div>
+      <div class="container footer-bottom"><span>© <span id="current-year"></span> ExploreNusantara. Dibuat untuk mengenal Indonesia lebih dekat.</span><span>Jelajahi dengan bijak, jaga setiap keindahan.</span></div>
+    </footer>
+
+    <dialog class="content-dialog" id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-shell"><button class="dialog-close" type="button" aria-label="Tutup detail">×</button><div id="detail-content"></div></div></dialog>
+    <dialog class="content-dialog favorites-dialog" id="favorites-dialog" aria-labelledby="favorites-title"><div class="dialog-shell"><button class="dialog-close" type="button" aria-label="Tutup favorit">×</button><div id="favorites-content"></div></div></dialog>
+    <dialog class="content-dialog image-dialog" id="image-dialog" aria-label="Tampilan foto lebih besar"><div class="image-dialog-shell"><button class="dialog-close" type="button" aria-label="Tutup foto">×</button><img id="expanded-image" alt="" /><p id="expanded-caption"></p></div></dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
